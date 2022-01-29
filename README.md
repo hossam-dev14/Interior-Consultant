@@ -35,7 +35,7 @@
 ## Overview
 
 ![Interior Consultant](https://user-images.githubusercontent.com/73648971/151675976-40d7dac1-9cb0-4899-894b-db31d2b2052b.PNG)
-Responsive Web Page, Using only HTML, CSS and JavaScript(toggle navigation sidebar).
+Responsive Web Page, Using only HTML, CSS and JavaScript(toggle sidebar navigation).
 
 
 ## How To Use
