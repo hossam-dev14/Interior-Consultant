@@ -34,8 +34,7 @@
 
 ## Overview
 
-![my-team-page](https://user-images.githubusercontent.com/73648971/113441519-5a333a80-93e6-11eb-884e-9f169bc5b852.png)
-
+![Interior Consultant](https://user-images.githubusercontent.com/73648971/151675976-40d7dac1-9cb0-4899-894b-db31d2b2052b.PNG)
 Responsive Web Page, Using only HTML, CSS and JavaScript(toggle navigation sidebar).
 
 
