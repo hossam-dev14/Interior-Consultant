@@ -1,0 +1,251 @@
+
+/*-------------------------------------------------
+
+ Theme Name: hossam-dev14
+ Theme URL: https://hossam-dev14.github.io/interior-consultant/
+ Description: hossam-dev14 is a portfolio website
+ Author: hossam-dev14
+ Author URL: https://github.com/hossam-dev14/
+ Version: 1.0.0
+
+---------------------------------------------- */
+
+
+/* 
+  TABLE OF CONTENT
+  ----------------
+
+  Variables
+  General
+  Navbar
+  Home
+  Footer
+  Responsive
+
+ 
+ */
+
+
+/* Variables ------------*/
+:root{
+	--white: #fff;
+	--gray: #828282;}
+
+
+/* General ------------*/
+body{
+	background: #181719;
+	color: #fff;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 1rem;
+	font-style: normal;
+	font-weight: normal;
+	margin: 0 auto;
+	width: 90%;
+	height: 100vh;
+	/* Layout */
+	display: grid;
+	grid-template-rows: auto 1fr auto;}
+
+*,::before, ::after{
+ 	margin: 0;
+ 	padding: 0;
+ 	box-sizing: border-box;}
+
+li{list-style: none}
+a{ 
+	text-decoration: none;
+	color: #eee }
+.active{
+	font-weight: bold;
+	border-bottom: 2px solid #fff !important;
+	padding-bottom: 0.17rem !important;}
+
+.fa-close:hover{color: #f56;}
+
+/* Navbar ------------*/
+nav{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding: 3rem 0;}
+	nav .logo{
+		border: 1px solid #FFF;
+		padding: 0.2rem 0.5rem .3rem;
+		width: 6.7rem;}	
+	nav .logo a{
+		font-family: 'Crimson Pro', serif;
+		font-weight: 200;
+		font-size: 14px;
+		line-height: 16px;
+		text-transform: uppercase;}
+	nav .menu {
+		display: flex;
+		flex-direction: row;
+		text-transform: capitalize;}
+	nav .menu li{ padding-left: 2.7rem;}
+	nav .menu a{
+		font-size: .9rem;
+		line-height: 22px;
+		padding-bottom: 0.1rem;}
+	nav .menu a:hover{ border-bottom: 0.137em solid #fff;}
+	nav .menu-icon{
+		display: none;
+		font-size: 1.37rem;
+		font-weight: bolder;
+		cursor: pointer;
+		z-index: 15;}
+
+/* Home ------------*/
+.home{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding: 3rem 0;}
+	.home .text{
+		width: 15rem;
+		display: flex;
+		align-items: flex-start;
+		align-self: center;
+		flex-direction: column;
+		margin-bottom: 2rem;}
+		.home .text h1{
+			font-family: Lora, serif;
+			font-weight: 500;
+			font-size: 2.3rem;
+			line-height: 61px;}
+		.home .text p{
+			font-size: 1.1rem;
+			line-height: 29px;
+			padding: 1rem 0 1.3rem;}
+		.home .text a{
+			font-weight: bold;
+			font-size: .9rem;
+			line-height: 22px;
+			margin-top: .3rem;
+			display:flex;
+			flex-direction: row;
+			align-items: center;
+			}
+			.text a .fa-arrow-right{
+				padding-left: 1rem;
+				width: 2rem}
+
+	.home .img{
+		position: relative;
+		right: 0;
+		bottom: 0;
+		top: 0;
+		left: 0;
+		width: 50%;}
+		.home .img > img{
+			width: 100%;
+			height: 100%;
+			max-width: 37rem;}
+		.home .img .lBox{
+			padding: .7rem 1rem;
+			border-radius: 0.1rem;
+			position: absolute;
+			bottom: -4rem;
+			right: 1.3rem;
+			width: 13rem;
+			background: #181719;
+			box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);}
+			.home .img .lBox .profile {
+				display: flex;
+				flex-direction: row;
+				flex-wrap: nowrap;}
+				.home .img .lBox .profile img{
+					width: 2.1rem;
+					height: 2.1rem;
+					border-radius: 5rem;
+					margin-right: 1rem}
+				.home .img .lBox .profile div{
+					margin-bottom: 1rem}
+					.home .img .lBox .profile div h5{
+						font-size: .8rem;
+						color: var(--gray);
+						margin-bottom: .3rem;}
+					.home .img .lBox .profile div p{
+						font-family: Montserrat;
+						font-style: normal;
+						font-weight: 500;
+						font-size: .8rem;
+						line-height: 15px;
+						color: var(--gray);}
+			.home .img .lBox p{
+				font-family: Lora, serif;
+				font-weight: bold;
+				font-size: 1rem;
+				line-height: 21px;
+				width: 10rem;}
+
+
+
+/* Footer ------------*/
+footer {
+	text-align: center;
+	font-size: .87rem;
+	color: var(--gray);
+	margin-top: 5rem;
+	padding-bottom: 1.3rem;}
+	footer a{text-decoration: underline;}
+
+
+
+/* Responsive ------------*/
+/* 992px */
+@media only screen and (max-width: 992px) {
+	nav .menu li {padding-left: 2rem;}
+	.home .text p {
+		font-size: 1rem;
+    line-height: 19px;
+    padding: .5rem 0 .7rem;}
+}
+
+/* 768px */
+@media only screen and (max-width: 768px) {
+	.home .text h1 {font-size: 1.7rem;}
+	.home .text p {
+		font-size: .9rem;
+		padding: 0.5rem 0 0.7rem;}
+	.home .text a {
+    font-size: .7rem;
+    margin-top: 0.2rem;}
+
+	.home .img .lBox .profile div {margin-bottom: 0.7rem;}
+	.home .img .lBox .profile div h5 {font-size: .7rem;}
+	.home .img .lBox .profile div p{font-size: .7rem;}
+
+	.home .img .lBox p {font-size: .9rem;}
+}
+
+@media only screen and (max-width: 600px) {
+	body{width: 94%}
+	nav{padding: 1rem 0}
+	nav .menu{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(36rem);
+    transition: transform .7s ease-in;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #000;
+    z-index: 10;}
+	nav .menu li {
+		padding-left: 0;
+		padding-bottom: 1rem}
+	nav .menu-icon{display: block}
+
+	.home .img {width: 100%;}
+}
+
+
+
